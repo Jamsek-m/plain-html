@@ -3,7 +3,7 @@ import {resolve, join} from "path";
 
 export default defineConfig({
     root: "./src/pages",
-    plugins: [],
+    publicDir: resolve(__dirname, "public"),
     build: {
         outDir: join(__dirname, "dist"),
         emptyOutDir: true,
